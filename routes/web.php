@@ -10,6 +10,8 @@ use App\Http\Controllers\ReportController;
 use App\Http\Controllers\LaporanController;
 use App\Http\Controllers\PeminjamanController;
 use App\Models\Peminjaman;
+use App\Http\Controllers\ChartController;
+use App\Http\Controllers\HomeController;
 
 // Route::get('/', [AuthController::class, 'showLogin'])->name('login');
 // Route::post('/login', [AuthController::class, 'login'])->name('login.post');
@@ -42,18 +44,19 @@ Route::middleware(['auth'])->group(function () {
 
     // Route::get('/report/pinjaman', [ReportController::class, 'pinjaman'])->name('report.pinjaman');
     // Route::get('/report/siswa', [ReportController::class, 'siswa'])->name('report.siswa');
-    
+    Route::get('/home', [HomeController::class, 'index']);
+    Route::get('/chart-data', [HomeController::class, 'getChartData']);
     
     Route::get('/index', [SiswaController::class, 'index'])->name('siswa.index');
     Route::get('/create', [SiswaController::class, 'create'])->name('siswa.create');
     Route::post('/store', [SiswaController::class, 'store'])->name('siswa.store');
 
-    Route::get('/home', function () {
-        // return "hello";
+    // Route::get('/home', function () {
+    //     // return "hello";
         
-        return view('home');
-        // return view('home');
-    });
+    //     return view('home');
+    //     // return view('home');
+    // });
 });
 
 

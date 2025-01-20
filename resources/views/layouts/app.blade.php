@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="{{ asset('css.css') }}">
     <link rel="stylesheet" href="{{ asset('animate.min.css') }}">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.0.0/dist/tailwind.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
@@ -40,6 +41,7 @@
        
     </footer>
 
+    <script type="module" src="{{ asset('js/chart.min.js') }}"></script>
     <script src="{{ asset('js/asd.js') }}"></script>
     <script src="{{ asset('js/asd1.js') }}"></script>
     <script src="{{ asset('js/jquery-3.7.1.min.js') }}"></script>

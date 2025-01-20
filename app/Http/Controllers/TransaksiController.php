@@ -37,4 +37,5 @@ public function pinjaman()
 //     // Kirim data ke view
 //     return view('transaksi.pengembalian', ['transaksi' => $transaksi]);
 // }
+
 }
